@@ -1,0 +1,25 @@
+<html>
+<head></head>
+<body>
+<h1 style="text-align:center;">Record Of All Products</h1>
+<h3>If you want to see record of single Product then click on Product Type
+<br>
+or if you want to edit information then click Edit.
+<br>
+You can delete Product by clicking on Delete Button.
+</h3>
+<table align="center" border="15" cellpadding="20">
+	<tr>
+		<th style="color:red;"><u>Product Type</u></th>
+		<th style="color:red;"><u>Edit</u></th>
+		<th style="color:red;"><u>Delete</u></th>
+	</tr>
+	<tr ng-repeat="product in products">
+		<td><a ui-sref="singleProduct({id: product.id})" >{{product.type}}</a></td>
+		<td><a ui-sref="editProduct({id:product.id})">Edit Product</a></td>
+		<td><button ng-click="deleteProduct(product.id)">Delete Product</button></td>
+	</tr>
+</table>
+
+</body>
+</html>

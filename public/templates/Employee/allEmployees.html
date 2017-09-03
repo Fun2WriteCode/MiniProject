@@ -1,0 +1,25 @@
+<html>
+<head></head>
+<body>
+<h1 style="text-align:center;">Record Of All Employees</h1>
+<h3>If you want to see record of single Employee then click on Name
+<br>
+or if you want to edit information then click Edit.
+<br>
+You can delete Employee by clicking on Delete Button.
+</h3>
+<table align="center" border="15" cellpadding="20">
+	<tr>
+		<th style="color:red;"><u>Employee Name</u></th>
+		<th style="color:red;"><u>Edit</u></th>
+		<th style="color:red;"><u>Delete</u></th>
+	</tr>
+	<tr ng-repeat="employee in employees">
+		<td><a ui-sref="singleEmployee({id: employee.id})" >{{employee.name}}</a></td>
+		<td><a ui-sref="editEmployee({id:employee.id})">Edit Employee</a></td>
+		<td><button ng-click="deleteEmployee(employee.id)">Delete Employee</button></td>
+	</tr>
+</table>
+
+</body>
+</html>

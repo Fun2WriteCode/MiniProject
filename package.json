@@ -1,0 +1,27 @@
+{
+  "name": "miniproject",
+  "version": "1.0.0",
+  "description": "Its is developed to record all records for Levi's Co management System for Term and Semester Project",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "nodemon": "^1.11.0",
+    "path": "^0.12.7",
+    "sails-mongo": "^0.12.2",
+    "sails-mysql": "^0.11.5",
+    "waterline": "^0.11.10",
+	"bcryptjs":"*",
+	"cors":"*",
+	"jsonwebtoken":"*",
+	"passport":"*",
+	"passport-jwt":"*"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Kashi",
+  "license": "ISC"
+}
